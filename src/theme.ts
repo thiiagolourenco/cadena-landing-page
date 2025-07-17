@@ -45,11 +45,6 @@ export const StyleTheme = definePreset(Aura, {
             background: '{indigo.400}',
           },
         },
-        dark: {
-          root: {
-            background: '{slate.400}',
-          },
-        },
       },
     },
   },
