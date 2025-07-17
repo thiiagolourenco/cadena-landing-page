@@ -6,7 +6,7 @@ import { ToolbarModule } from 'primeng/toolbar';
   selector: 'app-landing-page',
   imports: [ToolbarModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './landing-page.html',
-  styleUrl: './landing-page.scss',
+  templateUrl: './landing.page.html',
+  styleUrl: './landing.page.scss',
 })
 export class LandingPage {}
