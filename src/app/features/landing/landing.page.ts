@@ -1,11 +1,10 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { ToolbarModule } from 'primeng/toolbar';
+import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [ToolbarModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [MenuBarComponent],
   templateUrl: './landing.page.html',
   styleUrl: './landing.page.scss',
 })
