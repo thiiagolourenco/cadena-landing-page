@@ -1,3 +1,11 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { LandingPage } from './features/landing-page/landing-page';
+
+export const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: LandingPage,
+  },
+];
