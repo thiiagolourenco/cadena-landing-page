@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
+import { MenuBarComponent } from '../../shared/components/menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-landing-page',
