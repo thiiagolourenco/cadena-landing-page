@@ -1,0 +1,22 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="menuicon">
+    <img class="icon-menubar" src="icons/menubar.png" alt="Caneda's Logo" />
+  </ng-template>
+  <ng-template #start>
+    <img class="logo" src="images/cadena-logo.png" alt="Caneda's Logo" />
+  </ng-template>
+  <ng-template #item let-item let-root="root">
+    <div
+      class="p-menubar-item-link"
+      [ngClass]="{
+        'hidden-item-menu': item.label === 'Log in' || item.label === 'Sign up'
+      }"
+    >
+      <span>{{ item.label }}</span>
+    </div>
+  </ng-template>
+  <ng-template #end>
+    <p-button class="container-button" label="Log in" link />
+    <p-button class="container-button" label="Sign up" severity="secondary" />
+  </ng-template>
+</p-menubar>
